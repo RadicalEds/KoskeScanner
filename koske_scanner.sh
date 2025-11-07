@@ -194,6 +194,8 @@ c none
 
 hr
 
+[ "$DOUBLE_TRAILER" ] && say "WARNING: Multi Trailer Feature Is Still Unimplemented."
+
 say "Scanning Targets..."
 
 if [ "$LIST" ];then
