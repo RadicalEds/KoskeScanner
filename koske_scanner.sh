@@ -98,15 +98,14 @@ statusline () {
 }
 
 clearline () {
-	printf "%*s" $(tput cols);
-	echo -e -n "\r"
+	printf "\r%*s\r" $(tput cols);
 }
 
 # End of Printing Functions
 #####################################
 # Arguments
 
-while getopts "hfl:" o;do
+while getopts "hfl:2" o;do
 	case "${o}" in
 		(h) usage && exit;;
 		(f) FAST=true;;
